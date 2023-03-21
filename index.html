@@ -7,8 +7,62 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <h1>tesao</h1>
+    <!--10> Redirect and refresh
     <button onclick="window.location.href = 'contato.html'; ">Ir ao contato</button>
-    <button onclick="window.location.href = 'index.html';">Atualizar pagina</button>
+    <button onclick="window.location.href = window.location.href;">Atualizar pagina</button>
+    -->
+
+    <!-- 11> Modificando HTML pelo id e com this. no proprio index
+    <div id="area">
+        Bem vindo...
+    </div>
+
+    <br/><br/>
+
+    <button onclick="document.getElementById('area').innerHTML = 'Bem vindo ' + prompt('Qual seu nome?'); ">Entrar</button>
+
+    <br/><br/>
+
+    <div id="area">
+        Qual nome do botao?
+    </div>
+
+    <br/><br/>
+
+    <button onclick="this.innerHTML = prompt ('Qual nome do botao?'); ">Qual meu nome?</button>   
+    --> 
+
+    <!-- 12> Criando funcoes no script.js
+    <div id="area">
+        Bem vindo...
+    </div>
+
+    <br/><br/>
+
+    <button onclick="entrar()">Entrar</button>
+
+    <div id="area2">
+        Bem vindo...
+    </div>
+
+    <br/><br/>
+
+    <button onclick="entrar2('Gabriel')">Entrar</button>
+    -->
+
+    <!-- 13-14> Manipulando Arrays
+    <div id="array">
+
+    </div>
+    <br/><br/>
+
+    <button onclick="changeArray()">Listar</button>
+    -->
+
+    <!-- 15> loop(while e for)-->
+
+    <!-- 16> switch
+    <button onclick="pedir()">Pedir</button>
+    -->
 </body>
 </html>
