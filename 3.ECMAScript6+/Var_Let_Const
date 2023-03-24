@@ -1,0 +1,5 @@
+Var > Pode ser acessado fora do escopo onde foi criado
+
+Let > Só pode ser acessado no escopo onde ele foi criado, por exemplo: dentro do if, dentro de uma funcao etc.
+
+
