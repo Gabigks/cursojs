@@ -1,0 +1,39 @@
+F026: Let, var e const
+Var > Pode ser acessado fora do escopo onde foi criado.
+Let > Só pode ser acessado no escopo onde ele foi criado, por exemplo: dentro do if, dentro de uma funcao etc.
+Const > Constante, nao da pra mudar o valor.
+
+F027: Outra forma de concatenar strings
+let nome = "gabriel"
+let sobrenome = "Kolling"
+let idade = 21;
+let pessoa = `Meu nome e: ${nome} ${sobrenome} e tenho ${idade} anos de idade`;
+
+F028:Descontruindo objetos e arrays
+const pessoa = {
+	nome: "Gabriel";
+	sobrenome: "Kolling";
+	idade: 21;
+	cargo: "estagiario";
+}
+let { nome } = pessoa; //Cria uma variavel nome, com o nome do objeto pessoa.
+let { cargo:setor } = pessoa; //Cria uma variavel setor, com o cargo do objeto pessoa.
+let nomes = ["Gabriel", "Marcela", 10]; //Array
+let { 1:segundonome } = nomes; //Cria uma variavel segundonome com o conteudo da posição 1 do array nomes ("Marcela").
+let { 0:nome, 2:idade } = nomes; //Cria a variavel nome com a posicao 0 e uma variavel idade com o conteudo da posicao 2 do array nomes.
+let { nome, sobrenome, idade } = nomes; //Pega o conteudo por posicao em ordem crescente e atribui as variaveis nome, sobrenome e idade respectivamente.
+
+F029: Operador Spread
+let primeiros = [1, 2, 3];
+let numeros = [...primeiros, 4, 5, 6]; //Concatena p array primeiros com numeros.
+numeros //A saida sera [1,2,3,4,5,6]
+let pessoa = {
+	nome: "Gabriel",
+	idade: 21,
+	cargo: "Desenvolvedor"
+};
+let novaPessoa = {
+	...pessoa,
+	anoAtual: 2021,
+	cidade: "Chapeco"
+}; //O que tem no objeto pessoa vai passar para o novaPessoa + os atributos do novaPessoa.
